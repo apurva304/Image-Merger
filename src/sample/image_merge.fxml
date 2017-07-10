@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="514.0" prefWidth="583.0" xmlns="http://javafx.com/javafx/8.0.76-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Button fx:id="btn_input_image" layoutX="133.0" layoutY="78.0" mnemonicParsing="false" onAction="#getInput" text="Browse" />
+      <Button fx:id="btn_browse_output_path" layoutX="133.0" layoutY="253.0" mnemonicParsing="false" onAction="#getOutputPath" text="Browse" />
+      <RadioButton fx:id="radio_land" layoutX="389.0" layoutY="152.0" mnemonicParsing="false" selected="true" text="Landscape">
+         <toggleGroup>
+            <ToggleGroup fx:id="orientation" />
+         </toggleGroup></RadioButton>
+      <RadioButton fx:id="radio_pot" layoutX="389.0" layoutY="202.0" mnemonicParsing="false" text="Portrait" toggleGroup="$orientation" />
+      <Label layoutX="69.0" layoutY="30.0" prefHeight="48.0" prefWidth="225.0" text="Select images to be merged" />
+      <Label layoutX="74.0" layoutY="202.0" prefHeight="48.0" prefWidth="216.0" text="Path for output directory" />
+      <Label layoutX="326.0" layoutY="104.0" text="Orientation of the input image" />
+      <Label fx:id="label_progress" alignment="CENTER" layoutX="121.0" layoutY="449.0" prefHeight="39.0" prefWidth="363.0" />
+      <Button fx:id="generate" layoutX="246.0" layoutY="336.0" mnemonicParsing="false" onAction="#generate" text="Generate" />
+      <ProgressBar fx:id="progress_bar" layoutX="173.0" layoutY="396.0" prefHeight="27.0" prefWidth="243.0" progress="0.0" />
+   </children>
+</AnchorPane>
