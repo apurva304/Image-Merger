@@ -1,0 +1,1 @@
+This a desktop Application build with javaFX. It takes several small same size images and merges them into a big image. Particularly aimed for printing.This application was build to help professional in small id card manifacturing bussiness.
